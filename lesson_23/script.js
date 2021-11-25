@@ -28,11 +28,11 @@ fetch(`https://reqres.in/api/users?per_page=12`)
       total += item.first_name + ` ` + item.last_name + `, `;
       return total;
     }, ``);
-    // const str = String(userListNames);
-    // const newUserListNames = str.slice(0, -1);
+    const newUserListNames = userListNames.slice(0, -2);
+    // debugger;
     console.log(
       `Пункт №4: Наша база содержит данные следующих пользователей:`,
-      userListNames
+      newUserListNames
     );
     console.log(`---------`);
     console.log(`Пункт №5: Ключи в объекте пользователя:`);
