@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="media.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Lesson 24 | Validation</title>
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="main__form">
+      <h1 class="main__content-form-title">Регистрация</h1>
+      <form action="#" class="form" novalidate>
+        <div class="form__email">
+          <label for="email-input" class="input__label ">Email *</label>
+          <input type="email" placeholder="Введите email" id="email-input" class="form__input ">
+          <span class="email__error">Поле обязательно для заполнения</span>
+          <span class="email__invalid">Email невалидный</span>
+        </div>
+        <div class="form__password">
+          <label for="password-input" class="input__label_pass ">Пароль *</label>
+          <input type="password" placeholder="Введите пароль" id="password-input" class="form__input">
+          <span class="password__error">Поле обязательно для заполнения</span>
+          <span class="password__invalid">Пароль должен содержать как минимум 8 символов</span>
+        </div>
+        <div class="form__checkbox">
+
+          <input type="checkbox" id="checkbox-input" class="form__checkbox-input" name="agree" value="yes">
+          <label for="checkbox-input" class="input__label_thin ">Я согласен c &nbsp<a class="input__link"
+              href="#">Правилами пользования
+              приложением </a> <span class="input__label_thin_mark"> &nbsp*</span>
+          </label>
+          <span class="checkbox__error">Поле обязательно для заполнения</span>
+
+        </div>
+        <button type="submit" name="form__login-button" value="login__button"
+          class="form__login-button">Регистрация</button>
+
+      </form>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
