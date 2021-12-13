@@ -5,10 +5,8 @@ import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+import { NavLink } from "react-router-dom";
 
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -35,41 +33,35 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["MAN", "Accessories", "Bags", "Denim", "T-shirts"].map((text) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
         {[
-          "WOMAN",
-          "Accessories",
-          "Jackets&Coats",
-          "Polos",
-          "T-shirts",
-          "Shirts",
-        ].map((text) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {[
-          "KIDS",
-          "Accessories",
-          "Jackets&Coats",
-          "Polos",
-          "T-shirts",
-          "Shirts",
-          "Bags",
-        ].map((text) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
-          </ListItem>
+          {
+            link: "/",
+            text: "Main Page",
+          },
+          {
+            link: "/Page",
+            text: "Catalog",
+          },
+          {
+            link: "/Item",
+            text: "Item",
+          },
+          {
+            link: "/Cart",
+            text: "Shopping",
+          },
+        ].map((item) => (
+          <NavLink
+            key={item.text}
+            className="menu_dropdown__desc"
+            activeclassname="active"
+            to={item.link}
+          >
+            <ListItem button>
+              <ListItemText primary={<span>{item.text}</span>} />
+            </ListItem>
+            <Divider />
+          </NavLink>
         ))}
       </List>
     </Box>
@@ -79,7 +71,13 @@ export default function SwipeableTemporaryDrawer() {
     <div className="header__menu-icon">
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <Button onClick={toggleDrawer(anchor, true)}>
+            <img
+              className="header__menu-icon"
+              src="./header-menu-icon.svg"
+              alt="menu-icon"
+            />
+          </Button>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}

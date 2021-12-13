@@ -21,13 +21,13 @@ export default class Cart extends React.Component {
           </div>
           <div className="cart__form">
             <span className="cart__form-title">SHIPPING ADRESS</span>
-            <form action="GET A QUOTE" className="cart__form">
+            <form action="GET A QUOTE" className="form">
               <div className="form__adress">
                 <input
                   type="text"
                   placeholder="Bangladesh"
                   id="adress-input"
-                  class="form__input"
+                  className="form__input"
                 />
               </div>
               <div className="form__state">
@@ -35,7 +35,7 @@ export default class Cart extends React.Component {
                   type="text"
                   placeholder="State"
                   id="state-input"
-                  class="form__input"
+                  className="form__input"
                 />
               </div>
               <div className="form__postcode">
@@ -43,18 +43,29 @@ export default class Cart extends React.Component {
                   type="text"
                   placeholder="Postcode/Zip"
                   id="postcode-input"
-                  class="form__input"
+                  className="form__input"
                 />
               </div>
               <button
                 type="submit"
                 name="form__submit-button"
                 value="submit__button"
-                class="form__submit-button"
+                className="form__submit-button"
               >
                 GET A QUOTE
               </button>
             </form>
+            <div className="cart__total-price">
+              <div className="price__count">
+                <span className="price__count_sub">
+                  SUB TOTAL
+                  <span>$900</span>
+                </span>
+                <span className="price__count_grand">
+                  GRAND TOTAL <span>$900</span>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
         <Subscribe />

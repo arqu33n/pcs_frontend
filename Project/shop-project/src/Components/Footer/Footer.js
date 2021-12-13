@@ -10,16 +10,28 @@ export default class Footer extends React.Component {
             </span>
 
             <nav className="footer__social-media">
-              <a href="https://www.facebook.com/" target="_blank">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="footer__social-media-icon facebook"></div>
               </a>
-              <a href="https://www.instagram.com/" target="_blank">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="footer__social-media-icon instagram"></div>
               </a>
-              <a href="https://www.pinterest.ru/" target="_blank">
+              <a
+                href="https://www.pinterest.ru/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="footer__social-media-icon pinterest"></div>
               </a>
-              <a href="https://twitter.com/" target="_blank">
+              <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                 <div className="footer__social-media-icon twitter"></div>
               </a>
             </nav>

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Advantages from "../Advantages/Advantages";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
@@ -13,7 +13,7 @@ export default class MainPage extends React.Component {
         <div className="banner">
           <img
             src="./banner-image.png"
-            alt="banner-image"
+            alt="banner"
             className="banner__image"
           />
           <div className="banner__content">
@@ -118,7 +118,7 @@ export default class MainPage extends React.Component {
                 alt="Картинка товара №4"
                 className="page__item-image"
               />
-              <h3 class="page__item-title">
+              <h3 className="page__item-title">
                 ELLERY X M'O CAPSULE
                 <span className="page__item-description">
                   Known for her sculptural takes on traditional tailoring,
@@ -134,7 +134,7 @@ export default class MainPage extends React.Component {
                 alt="Картинка товара №5"
                 className="page__item-image"
               />
-              <h3 class="page__item-title">
+              <h3 className="page__item-title">
                 ELLERY X M'O CAPSULE
                 <span className="page__item-description">
                   Known for her sculptural takes on traditional tailoring,
@@ -161,9 +161,9 @@ export default class MainPage extends React.Component {
               </h3>
             </section>
           </div>
-          <NavLink exact to="Item" className="main__button">
+          <Link to="/Item" className="main__button">
             Browse All Product
-          </NavLink>
+          </Link>
         </div>
         <Advantages />
         <Subscribe />

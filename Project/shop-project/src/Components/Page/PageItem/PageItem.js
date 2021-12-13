@@ -11,7 +11,7 @@ export default class PageItem extends React.Component {
     return (
       <div className="page__item">
         <div className="page__item-image">
-          <img src={image} alt="Catalog image" />
+          <img src={image} alt="Catalog" />
         </div>
         <h3 className="page__item-title">
           {title}
