@@ -9,25 +9,15 @@ function App() {
   return (
     <div className="App">
       <div className="main">
-        {/* Define all the routes */}
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
-          <Route path="/Item" element={<Item />}></Route>
+          <Route path="/Item/" element={<Item />}></Route>
+          <Route path="/Item/:id" element={<Item />}></Route>
           <Route path="/Page" element={<Page />}></Route>
           <Route path="/Cart" element={<Cart />}></Route>
         </Routes>
       </div>
     </div>
-    // <div className="App">
-    //   <Header />
-    //   <BreadCrumbs />
-    //   {/* тут фильтры */}
-    //   <Page />
-    //   <Advantages />
-    //   {/* тут пагинация */}
-    //   <Subscribe />
-    //   <Footer />
-    // </div>
   );
 }
 

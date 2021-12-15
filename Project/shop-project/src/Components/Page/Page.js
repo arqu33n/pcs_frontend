@@ -17,6 +17,7 @@ export default class Page extends React.Component {
             {cards.map((item) => {
               return (
                 <PageItem
+                  id={item.id}
                   key={item.id}
                   image={item.image}
                   title={item.title}

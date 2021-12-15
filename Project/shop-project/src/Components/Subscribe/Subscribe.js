@@ -7,7 +7,7 @@ export default class Subscribe extends React.Component {
           <div className="subscribe__content">
             <div className="subscribe__quote">
               <img
-                src="./subscribe-image.svg"
+                src="/subscribe-image.svg"
                 alt="Subscribe background"
                 className="subscribe__quote-image"
               />

@@ -11,11 +11,7 @@ export default class MainPage extends React.Component {
         <Header />
 
         <div className="banner">
-          <img
-            src="./banner-image.png"
-            alt="banner"
-            className="banner__image"
-          />
+          <img src="/banner-image.png" alt="banner" className="banner__image" />
           <div className="banner__content">
             <div className="banner__content-title">
               <div className="banner__title-decor"></div>
@@ -66,7 +62,7 @@ export default class MainPage extends React.Component {
           <div className="page">
             <section className="page__item">
               <img
-                src="./page-item-image-1.svg"
+                src="/page-item-image-1.svg"
                 alt="Картинка товара №1"
                 className="page__item-image"
               />
@@ -82,7 +78,7 @@ export default class MainPage extends React.Component {
             </section>
             <section className="page__item">
               <img
-                src="./page-item-image-2.svg"
+                src="/page-item-image-2.svg"
                 alt="Картинка товара №2"
                 className="page__item-image"
               />
@@ -98,7 +94,7 @@ export default class MainPage extends React.Component {
             </section>
             <section className="page__item">
               <img
-                src="./page-item-image-3.svg"
+                src="/page-item-image-3.svg"
                 alt="Картинка товара №3"
                 className="page__item-image"
               />
@@ -114,7 +110,7 @@ export default class MainPage extends React.Component {
             </section>
             <section className="page__item">
               <img
-                src="./page-item-image-4.svg"
+                src="/page-item-image-4.svg"
                 alt="Картинка товара №4"
                 className="page__item-image"
               />
@@ -130,7 +126,7 @@ export default class MainPage extends React.Component {
             </section>
             <section className="page__item">
               <img
-                src="./page-item-image-5.svg"
+                src="/page-item-image-5.svg"
                 alt="Картинка товара №5"
                 className="page__item-image"
               />
@@ -146,7 +142,7 @@ export default class MainPage extends React.Component {
             </section>
             <section className="page__item">
               <img
-                src="./page-item-image-6.svg"
+                src="/page-item-image-6.svg"
                 alt="Картинка товара №6"
                 className="page__item-image"
               />
@@ -161,7 +157,7 @@ export default class MainPage extends React.Component {
               </h3>
             </section>
           </div>
-          <Link to="/Item" className="main__button">
+          <Link to="/Page" className="main__button">
             Browse All Product
           </Link>
         </div>

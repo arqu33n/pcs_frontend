@@ -7,7 +7,7 @@ export default class Advantages extends React.Component {
           <div className="advantages__content">
             <section className="advantages__item">
               <img
-                src="./advantages-icon-1.svg"
+                src="/advantages-icon-1.svg"
                 alt="Delivery icon"
                 className="advantages__item-icon"
               />
@@ -21,7 +21,7 @@ export default class Advantages extends React.Component {
             </section>
             <section className="advantages__item">
               <img
-                src="./advantages-icon-2.svg"
+                src="/advantages-icon-2.svg"
                 alt="Sales icon"
                 className="advantages__item-icon"
               />
@@ -35,7 +35,7 @@ export default class Advantages extends React.Component {
             </section>
             <section className="advantages__item">
               <img
-                src="./advantages-icon-3.svg"
+                src="/advantages-icon-3.svg"
                 alt="Quality icon"
                 className="advantages__item-icon"
               />

@@ -8,42 +8,37 @@ export default class Header extends React.Component {
         <div className="header__content container">
           <Link to="/" className="header__logo">
             <img
-              src="./header-logo.svg"
+              src="/header-logo.svg"
               alt="logo"
               className="header__logo-image"
             />
           </Link>
           <a href="/" className="header__search">
             <img
-              src="./header-search.svg"
+              src="/header-search.svg"
               alt="search-icon"
               className="header__search-icon"
             />
           </a>
           <nav className="header__nav">
             <div className="header__menu">
-              {/* <a href="#" className="header__menu-link"> */}
-              {/* <img
-                className="header__menu-icon"
-                src="./header-menu-icon.svg"
-                alt="menu-icon"
-              /> */}
               <HeaderMenu />
-              {/* </a> */}
             </div>
             <div className="header__user">
               <img
                 className="header__user-icon"
-                src="./header-user-icon.svg"
+                src="/header-user-icon.svg"
                 alt="user-icon"
               />
             </div>
             <div className="header__shopping-cart">
-              <img
-                className="header__shopping-cart-icon"
-                src="./header-shopping-cart-icon.svg"
-                alt="shopping-cart-icon"
-              />
+              <Link to="/Cart">
+                <img
+                  className="header__shopping-cart-icon"
+                  src="/header-shopping-cart-icon.svg"
+                  alt="shopping-cart-icon"
+                />
+              </Link>
             </div>
           </nav>
         </div>

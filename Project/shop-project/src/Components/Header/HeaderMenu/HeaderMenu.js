@@ -42,10 +42,7 @@ export default function SwipeableTemporaryDrawer() {
             link: "/Page",
             text: "Catalog",
           },
-          {
-            link: "/Item",
-            text: "Item",
-          },
+
           {
             link: "/Cart",
             text: "Shopping",
@@ -74,7 +71,7 @@ export default function SwipeableTemporaryDrawer() {
           <Button onClick={toggleDrawer(anchor, true)}>
             <img
               className="header__menu-icon"
-              src="./header-menu-icon.svg"
+              src="/header-menu-icon.svg"
               alt="menu-icon"
             />
           </Button>

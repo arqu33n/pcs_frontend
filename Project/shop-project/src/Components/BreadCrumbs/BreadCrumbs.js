@@ -9,12 +9,8 @@ export default class BreadCrumbs extends React.Component {
         path: "/",
       },
       {
-        title: "MEN",
-        path: "#",
-      },
-      {
         title: "NEW ARRIVALS",
-        path: "/",
+        path: "/Page",
       },
     ];
     return (
